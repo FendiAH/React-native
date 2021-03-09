@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <View>
-      <Text style={styles.firstLine}> Lyrica Classical Entertainment</Text>
-      <Text style={styles.secondLine}>www.lyricaclassic.org</Text>
+      <Text style={styles.firstLine}> { props.title }</Text>
+      <Text style={styles.secondLine}>{ props.website }</Text>
     </View>
   );
 };
